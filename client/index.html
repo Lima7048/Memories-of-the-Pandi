@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <div id="form-container">
+      <form>
+        <label> User Name  <input type="text" name="username" placeholder="Enter your name" required></label> 
+        <label> Your Story <input type="text" name="message" placeholder="Type your story" required></label> 
+        <label> Date  <input type="date" name="date"  required></label> 
+        <label> Location (optional) <input type="text" name="location" placeholder="Location" ></label> 
+        <label> Your Picture (optional) <input type="text" name="picture" placeholder="Link to your picture" ></label> 
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   </body>
 </html>
