@@ -10,7 +10,7 @@ app.listen("0001", () => {
   console.log("port is working");
 });
 
-app.get("/log", (req, res) => {
+app.get("/memories", (req, res) => {
   try {
     let stories = db.prepare(`SELECT * FROM memories`).all()
     res.status(200).json(stories)
