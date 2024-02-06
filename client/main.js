@@ -1,8 +1,9 @@
-const baseURL = import.meta.env.VITE_Server;
+const baseURL = "http://localhost:1235";
+// import.meta.env.VITE_Server;
 const form = document.getElementById("memoryLog");
 const existingData = document.getElementById("existingMemories");
 
-form.addEventListener("sumit", async (event) => {
+form.addEventListener("submit", async (event) => {
   event.preventDefault();
   const formData = new FormData(form);
   const memoryData = Object.fromEntries(formData);
@@ -19,3 +20,21 @@ form.addEventListener("sumit", async (event) => {
     console.log("failed to add", response.status);
   }
 });
+
+async function fetchMemoriesList() {
+  const memoriesList = await fetch(`${baseURL}/memories`);
+  let result = await memoriesList.json();
+  return result;
+}
+fetchMemoriesList();
+
+async function displayMemories() {
+  let memories = await fetchMemoriesList();
+  existingData.innerHTML = "";
+  memories.forEach((item) => {
+    let memoryContainer = document.createElement("div");
+    memoryContainer.innerHTML = `Username: ${item.username} message: ${item.message} date: ${item.date} location: ${item.location} picture: ${item.picture}`;
+    existingData.appendChild(memoryContainer);
+  });
+}
+displayMemories();
