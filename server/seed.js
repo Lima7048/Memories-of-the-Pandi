@@ -12,5 +12,5 @@ db.exec(`CREATE TABLE IF NOT EXISTS memories (
 db.exec(`
 INSERT into memories (username, message, date, location, picture)
 VALUES
-('TOM', 'HELLO', 5, 'norwich', 'https://posters.movieposterdb.com/22_10/2004/410519/l_the-matrix-recalibrated-movie-poster_74175b37.jpg')
+('TOM', 'HELLO', 5, 'norwich', 'https://posters.movieposterdb.com/22_10/2004/410519/l_the-matrix-recalibrated-movie-poster_74175b37.jpg'),
 `)
