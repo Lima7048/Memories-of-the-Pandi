@@ -12,28 +12,29 @@ app.listen("0001", () => {
 
 app.get("/memories", (req, res) => {
   try {
-    let stories = db.prepare(`SELECT * FROM memories`).all()
-    res.status(200).json(stories)
-    return
+    let stories = db.prepare(`SELECT * FROM memories`).all();
+    res.status(200).json(stories);
+    return;
+  } catch (err) {
+    res.status(500).json(err);
   }
-  catch (err) {
-    res.status(500).json(err)
-  }
-})
+});
 
 app.post(`/memories`, (req, res) => {
   try {
-    const username = req.body.username
-    const message = req.body.message
-    const date = req.body.date
-    const location = req.body.location
-    const picture = req.body.picture
+    const username = req.body.username;
+    const message = req.body.message;
+    const date = req.body.date;
+    const location = req.body.location;
+    const picture = req.body.picture;
 
-    const newMemories = db.prepare(`INSERT INTO memories (username, message, date, location, picture) VALUES(?,?,?,?,?)`).run
-      (username, message, date, location, picture)
-    res.status(200).json(newMemories)
+    const newMemories = db
+      .prepare(
+        `INSERT INTO memories (username, message, date, location, picture) VALUES(?,?,?,?,?)`
+      )
+      .run(username, message, date, location, picture);
+    res.status(200).json(newMemories);
   } catch (err) {
-    res.status(500).json({ error: err })
+    res.status(500).json({ error: err });
   }
-
-})
+});
