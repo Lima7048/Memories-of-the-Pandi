@@ -3,22 +3,39 @@ body {
     url("https://images.unsplash.com/photo-1526716173434-a1b560f2065d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHBhbmRhfGVufDB8fDB8fHww");
 }
 
+.logo {
+  height: 100px;
+  width: 80px;
+  float: top;
+  display: flex;
+  gap: 1rem;
+  z-index: 1;
+  padding-top: 5px;
+  padding-right: 30px;
+  padding-bottom: 5px;
+  padding-left: 40px;
+  overflow: hidden;
+}
+
 h1 {
   text-align: center;
   text-decoration: underline;
+  font-family: "Single Day", cursive;
 }
 
-h3 {
+h4 {
   text-align: center;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 #form-container {
-  background-color: white;
-  border: 5px solid black;
+  background-color: #f9f1e9;
+  border: 0px;
   display: flex;
   flex-direction: column;
   padding: 5px;
   width: 80vw;
+  border-radius: 1rem;
 }
 
 input {
@@ -27,4 +44,26 @@ input {
   display: flex;
   flex-direction: column;
   width: 60vw;
+}
+
+.img {
+  height: 300px;
+  width: auto;
+}
+
+.body {
+  background-color: #729d60;
+}
+
+#memmorylog {
+  border: 0px;
+  background-color: #ffeeb6;
+}
+
+.footer {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 5px;
+  font-size: 15px;
+  overflow: auto;
 }
