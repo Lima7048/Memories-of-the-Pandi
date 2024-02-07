@@ -1,11 +1,36 @@
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), #3551b5),
-    url("https://images.unsplash.com/photo-1526716173434-a1b560f2065d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHBhbmRhfGVufDB8fDB8fHww");
+  background-color: #729d60;
+  background-position: center;
+  width: 100vw;
+  
+}
+.top-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+#main-screen{
+  display: grid;
+  width: 100vw;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+#memoryLog{
+  height: 50vh;
+}
+#existingMemories{
+  width: 30vw;
+  border: solid;
+  border-color: black;
+  border-radius: 12px;
 }
 
 .logo {
-  height: 100px;
-  width: 80px;
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
   float: top;
   display: flex;
   gap: 1rem;
@@ -16,34 +41,45 @@ body {
   padding-left: 40px;
   overflow: hidden;
 }
-
+button{
+  padding: 10px 0;
+  color: #fff;
+  outline: none;
+  background: transparent;
+  border: 1px solid #fff;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 20px;
+}
 h1 {
   text-align: center;
-  text-decoration: underline;
   font-family: "Single Day", cursive;
 }
 
-h4 {
+h3 {
   text-align: center;
+  display: flex;
   font-family: "Josefin Sans", sans-serif;
 }
 
 #form-container {
-  background-color: #f9f1e9;
-  border: 0px;
+  width: 90%;
+  max-height: 100vh;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
-  padding: 5px;
-  width: 80vw;
-  border-radius: 1rem;
+  margin: 30px;
+
 }
 
-input {
-  padding: 8px;
-  margin: 3px;
-  display: flex;
-  flex-direction: column;
-  width: 60vw;
+input{
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  font-size: 15px;
 }
 
 img {
@@ -55,15 +91,48 @@ img {
   background-color: #729d60;
 }
 
-#memmorylog {
-  border: 0px;
-  background-color: #ffeeb6;
-}
-
-.footer {
+footer {
   color: rgb(0, 0, 0);
   text-align: center;
   padding: 5px;
   font-size: 15px;
   overflow: auto;
+}
+@media (max-width: 768px) {
+  .logo {
+    width: 30px;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #main-screen{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .panid-img{
+    width: 150px;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  #form-container {
+    width: 100%;
+    margin: 15px;
+  }
+
+  #existingMemories {
+    width: 90%;
+  }
+
+  input {
+    font-size: 14px;
+  }
 }
