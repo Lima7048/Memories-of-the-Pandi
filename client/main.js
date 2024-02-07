@@ -1,5 +1,5 @@
-const baseURL = "http://localhost:1235";
-// import.meta.env.VITE_Server;
+const baseURL = import.meta.env.VITE_Server;
+
 const form = document.getElementById("memoryLog");
 const existingData = document.getElementById("existingMemories");
 

@@ -134,6 +134,11 @@ img {
   background-color: #ffeeb6;
 }
 
+label {
+  color: white;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}
 .footer {
   color: rgb(0, 0, 0);
   text-align: center;
