@@ -1,9 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Pacifico&family=Poppins:wght@900&family=Single+Day&display=swap");
 body {
   background-color: #729d60;
-  background-position: center;
-  width: 100vw;
-  
-}
+
 .top-container{
   display: flex;
   flex-direction: row;
@@ -26,13 +24,15 @@ body {
   border-color: black;
   border-radius: 12px;
 }
-
 .logo {
+
   width: 50px;
   height: 50px;
   border-radius: 20px;
+
   float: top;
   display: flex;
+  flex-direction: row;
   gap: 1rem;
   z-index: 1;
   padding-top: 5px;
@@ -41,6 +41,7 @@ body {
   padding-left: 40px;
   overflow: hidden;
 }
+
 button{
   padding: 10px 0;
   color: #fff;
@@ -51,6 +52,24 @@ button{
   cursor: pointer;
   margin-top: 20px;
 }
+
+
+.nav {
+  background-color: #FCBB65;
+  display: flex;
+  position: top;  
+  align-items: center; 
+      justify-content: space-evenly; 
+      top: 0px; 
+  padding-left:30px;
+  padding-right:30px;
+  gap: 2;
+  z-index: 1;
+  font-family: "Single Day", cursive;
+  font-weight: bold;
+  }
+
+
 h1 {
   text-align: center;
   font-family: "Single Day", cursive;
@@ -60,9 +79,11 @@ h3 {
   text-align: center;
   display: flex;
   font-family: "Josefin Sans", sans-serif;
+  color: rgb(7, 39, 28);
 }
 
 #form-container {
+
   width: 90%;
   max-height: 100vh;
   max-width: 600px;
@@ -80,24 +101,59 @@ input{
   color: #fff;
   background: transparent;
   font-size: 15px;
+
+  background-color: #f9f1e9;
+  border: 0px;
+  padding: 5px;
+  width: 70vw;
+  border-radius: 1rem;
+  /* display: grid;
+  grid-template-columns: 200px 100px 100px;
+  grid-template-rows: 50px auto 50px;
+  column-gap: 10px;
+  row-gap: 15px;
+  grid-column-start: auto;
+  grid-column-end: auto;
+  grid-row-start: auto;
+  grid-row-end: auto; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
 }
+
+
+
 
 img {
   height: 300px;
   width: auto;
 }
 
+
 .body {
   background-color: #729d60;
 }
 
-footer {
+
+
+#memmorylog {
+  border: 0px;
+  background-color: #ffeeb6;
+}
+
+.footer {
+
   color: rgb(0, 0, 0);
   text-align: center;
   padding: 5px;
   font-size: 15px;
   overflow: auto;
 }
+
 @media (max-width: 768px) {
   .logo {
     width: 30px;
@@ -135,4 +191,23 @@ footer {
   input {
     font-size: 14px;
   }
+
+
+#existingMemories {
+  border-radius: 1rem;
+  background-color: #ffeeb6;
+  padding-top: 500px;
+  margin-left: 30%;
+  height: 400px;
+  width: 800px;
+  position: relative;
+  margin-top: 10%;
+  display: grid;
+  grid-area: center;
+
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
 }
+
