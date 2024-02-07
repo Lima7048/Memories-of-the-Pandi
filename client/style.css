@@ -17,6 +17,22 @@ body {
   overflow: hidden;
 }
 
+.nav {
+  background-color: #FCBB65;
+  display: flex;
+  position: top;  
+      align-items: center; 
+      justify-content: space-evenly; 
+      top: 0px; 
+  padding-left:30px;
+  padding-right:30px;
+  gap: 2;
+  z-index: 1;
+  font-family: "Single Day", cursive;
+  font-weight: bold;
+  }
+
+
 h1 {
   text-align: center;
   text-decoration: underline;
