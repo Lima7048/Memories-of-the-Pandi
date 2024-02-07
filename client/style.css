@@ -1,13 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Pacifico&family=Poppins:wght@900&family=Single+Day&display=swap");
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), #3551b5),
-    url("https://images.unsplash.com/photo-1526716173434-a1b560f2065d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHBhbmRhfGVufDB8fDB8fHww");
+  background-color: #729d60;
 }
-
 .logo {
   height: 100px;
-  width: 80px;
+  width: 90px;
   float: top;
   display: flex;
+  flex-direction: row;
   gap: 1rem;
   z-index: 1;
   padding-top: 5px;
@@ -23,36 +23,45 @@ h1 {
   font-family: "Single Day", cursive;
 }
 
-h4 {
+h3 {
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
+  color: rgb(7, 39, 28);
 }
 
 #form-container {
   background-color: #f9f1e9;
   border: 0px;
-  display: flex;
-  flex-direction: column;
   padding: 5px;
-  width: 80vw;
+  width: 70vw;
   border-radius: 1rem;
+  /* display: grid;
+  grid-template-columns: 200px 100px 100px;
+  grid-template-rows: 50px auto 50px;
+  column-gap: 10px;
+  row-gap: 15px;
+  grid-column-start: auto;
+  grid-column-end: auto;
+  grid-row-start: auto;
+  grid-row-end: auto; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
 }
 
 input {
   padding: 8px;
-  margin: 3px;
-  display: flex;
-  flex-direction: column;
-  width: 60vw;
+  display: grid;
+  width: 40vw;
 }
 
 img {
   height: 300px;
   width: auto;
-}
-
-.body {
-  background-color: #729d60;
 }
 
 #memmorylog {
@@ -66,4 +75,21 @@ img {
   padding: 5px;
   font-size: 15px;
   overflow: auto;
+}
+#existingMemories {
+  border-radius: 1rem;
+  background-color: #ffeeb6;
+  padding-top: 500px;
+  margin-left: 30%;
+  height: 400px;
+  width: 800px;
+  position: relative;
+  margin-top: 10%;
+  display: grid;
+  grid-area: center;
+
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
 }
