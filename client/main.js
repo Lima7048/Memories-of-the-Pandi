@@ -38,3 +38,8 @@ async function displayMemories() {
   });
 }
 displayMemories();
+
+anime({
+  targets: ".testAnimation",
+  translateX: 250,
+});
