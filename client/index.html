@@ -1,54 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Memories of the Pandi</title>
-    <script type="module" src="/main.js" defer></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <d>
-    <h1><strong>Memories of the Pandi</strong></h1>
-    <h3>A place to share your memories</h3>
-    <img src="./logo.png">
-    <div id="form-container">
-      <form id="memoryLog">
-        <label>
-          User Name
-          <input
-            type="text"
-            name="username"
-            placeholder="Enter your name"
-            required
-        /></label>
-        <label>
-          Your Story
-          <input
-            type="text"
-            name="message"
-            placeholder="Type your story"
-            required
-        /></label>
-        <label> Date <input type="number" name="date" required /></label>
-        <label>
-          Location (optional)
-          <input type="text" name="location" placeholder="Location"
-        /></label>
-        <label>
-          Your Picture (optional)
-          <input type="text" name="picture" placeholder="Link to your picture"
-        /></label>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-    <div id="existingMemories">
-      <h3>See what other people remember</h3>
-    </div>
-    <div>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memories of the Pandi</title>
+  <script type="module" src="/main.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1><strong>Memories of the Pandi</strong></h1>
+  <img src="./logo.png" class="logo">
+  <h3>A place to share your memories</h3>
+
+  <div id="form-container">
+    <form id="memoryLog">
+      <label>
+        User Name
+        <input type="text" name="username" placeholder="Enter your name" required /></label>
+      <label>
+        Your Story
+        <input type="text" name="message" placeholder="Type your story" required /></label>
+      <label> Date <input type="number" name="date" required /></label>
+      <label>
+        Location (optional)
+        <input type="text" name="location" placeholder="Location" /></label>
+      <label>
+        Your Picture (optional)
+        <input type="text" name="picture" placeholder="Link to your picture" /></label>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div id="existingMemories">
+    <h3>See what other people remember</h3>
+  </div>
+  <div>
     <img src="./pandi.png">
-    </div> 
-    
+  </div>
+
   </div>
 </body>
 <div class="footer">
@@ -56,4 +47,5 @@
   <p><i>Memmories of the Pandi</i></p>
   </footer>
   </body>
+
 </html>
