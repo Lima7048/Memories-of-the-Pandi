@@ -1,31 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Pacifico&family=Poppins:wght@900&family=Single+Day&display=swap");
 body {
   background-color: #729d60;
-
-.top-container{
+}
+.top-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-#main-screen{
+#main-screen {
   display: grid;
   width: 100vw;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
 }
-#memoryLog{
+#memoryLog {
   height: 50vh;
 }
-#existingMemories{
+#existingMemories {
   width: 30vw;
   border: solid;
   border-color: black;
   border-radius: 12px;
 }
 .logo {
-
   width: 50px;
   height: 50px;
   border-radius: 20px;
@@ -42,7 +41,7 @@ body {
   overflow: hidden;
 }
 
-button{
+button {
   padding: 10px 0;
   color: #fff;
   outline: none;
@@ -53,22 +52,20 @@ button{
   margin-top: 20px;
 }
 
-
 .nav {
-  background-color: #FCBB65;
+  background-color: #fcbb65;
   display: flex;
-  position: top;  
-  align-items: center; 
-      justify-content: space-evenly; 
-      top: 0px; 
-  padding-left:30px;
-  padding-right:30px;
+  position: top;
+  align-items: center;
+  justify-content: space-evenly;
+  top: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
   gap: 2;
   z-index: 1;
   font-family: "Single Day", cursive;
   font-weight: bold;
-  }
-
+}
 
 h1 {
   text-align: center;
@@ -83,17 +80,15 @@ h3 {
 }
 
 #form-container {
-
   width: 90%;
   max-height: 100vh;
   max-width: 600px;
   display: flex;
   flex-direction: column;
   margin: 30px;
-
 }
 
-input{
+input {
   width: 100%;
   padding: 10px;
   outline: 0;
@@ -125,20 +120,14 @@ input{
   padding: 10px;
 }
 
-
-
-
 img {
   height: 300px;
   width: auto;
 }
 
-
 .body {
   background-color: #729d60;
 }
-
-
 
 #memmorylog {
   border: 0px;
@@ -146,7 +135,6 @@ img {
 }
 
 .footer {
-
   color: rgb(0, 0, 0);
   text-align: center;
   padding: 5px;
@@ -161,12 +149,12 @@ img {
     padding-left: 10px;
     padding-right: 10px;
   }
-  #main-screen{
+  #main-screen {
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
-  .panid-img{
+  .panid-img {
     width: 150px;
     height: auto;
   }
@@ -191,7 +179,7 @@ img {
   input {
     font-size: 14px;
   }
-
+}
 
 #existingMemories {
   border-radius: 1rem;
@@ -210,4 +198,3 @@ img {
   border: 3px solid green;
   padding: 10px;
 }
-
