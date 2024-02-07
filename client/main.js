@@ -38,3 +38,18 @@ async function displayMemories() {
   });
 }
 displayMemories();
+
+anime({
+  targets: ".panid-img",
+  translateY: [250, 50],
+  duration: 2500,
+  delay: 1000,
+  loop: 5,
+});
+
+anime({
+  targets: "#subheading",
+  backgroundColor: "#FFF",
+  borderRadius: ["0%", "20%"],
+  delay: 2000,
+});
