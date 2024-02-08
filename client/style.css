@@ -56,20 +56,35 @@ button {
   background-color: #fcbb65;
   display: flex;
   position: top;
-  align-items: center;
+  align-items: left;
   justify-content: space-evenly;
   top: 0px;
   padding-left: 30px;
   padding-right: 30px;
-  gap: 2;
+  gap: 4;
   z-index: 1;
   font-family: "Single Day", cursive;
   font-weight: bold;
+  font-size: 5px;
 }
 
+a:link {
+  color: #eeeeee;
+}
+a:visited {
+  color: #729d60;
+}
+a:hover {
+  color: #729d60 ;
+  
+}
 h1 {
   text-align: center;
   font-family: "Single Day", cursive;
+}
+
+h2{
+ color: #fcbb65;
 }
 
 h3 {
