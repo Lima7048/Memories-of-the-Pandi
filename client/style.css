@@ -12,7 +12,7 @@ body {
 #main-screen {
   display: grid;
   width: 100vw;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   gap: 1rem;
 }
 #memoryLog {
@@ -65,11 +65,13 @@ button {
   z-index: 1;
   font-family: "Single Day", cursive;
   font-weight: bold;
+  border-radius: 3px;
 }
 
 h1 {
   text-align: center;
   font-family: "Single Day", cursive;
+  font-size: 400px;
 }
 
 h3 {
@@ -86,6 +88,7 @@ h3 {
   display: flex;
   flex-direction: column;
   margin: 30px;
+  position: relative;
 }
 
 input {
@@ -93,7 +96,7 @@ input {
   padding: 10px;
   outline: 0;
   border: 1px solid #fff;
-  color: #fff;
+  color: #0c0b0b;
   background: transparent;
   font-size: 15px;
 
@@ -118,6 +121,9 @@ input {
   width: 50%;
   border: 3px solid green;
   padding: 10px;
+}
+.second-pandi-image{
+  display: inline;
 }
 
 img {
@@ -147,65 +153,87 @@ label {
   overflow: auto;
 }
 
-@media (max-width: 768px) {
-  .logo {
-    width: 30px;
-    height: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  #main-screen {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .panid-img {
-    width: 150px;
-    height: auto;
-  }
 
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  h3 {
-    font-size: 1rem;
-  }
-
-  #form-container {
-    width: 100%;
-    margin: 15px;
-  }
-
-  #existingMemories {
-    width: 90%;
-  }
-
-  input {
-    font-size: 14px;
-  }
-}
 
 #existingMemories {
   border-radius: 1rem;
   background-color: #ffeeb6;
   padding-top: 500px;
   margin-left: 30%;
-  height: 400px;
-  width: 800px;
+  height: 500px;
+  width: 700px;
   position: relative;
   margin-top: 10%;
   display: grid;
   grid-area: center;
-
   margin: auto;
-  width: 50%;
-  border: 3px solid green;
+  /* width: 50%; */
+  border: 2px solid green;
   padding: 10px;
+  /* white-space: nowrap; */
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-wrap: break-word;
 }
+
+.story {
+  background-color: #f6d25d;
+  border-radius: 1rem;
+  margin: 1%;
+  padding: 2%;
+  width: 650px;
+  height: 50px;
+  /* white-space: nowrap; */
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-wrap: break-word;
+  display: inline-block;
+}
+.story * {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+
+  .top-container {
+    flex-direction: column;
+  }
+
+  #main-screen {
+    grid-template-columns: 1fr;
+  }
+
+  #existingMemories {
+    width: 80vw;
+    margin-left: 10%;
+  }
+
+  #form-container {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .story {
+    width: 100%;
+  }
+
+  .logo {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
 
 #subheading {
-  background-color: #fcbb65;
-  border: 5px solid black;
-  padding: 15px;
-}
+  padding: 10px;
+  border-radius: 3px;
+
+  .footer {
+    font-size: 12px;
+  }
+
