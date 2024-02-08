@@ -34,7 +34,7 @@ async function displayMemories() {
   existingData.innerHTML = "";
   memories.forEach((item) => {
     let memoryContainer = document.createElement("div");
-    let picture = document.createElement("img")
+    let picture = document.createElement("img");
 
     memoryContainer.classList.add("story");
     memoryContainer.innerHTML = `Username: ${item.username} message: ${item.message} date: ${item.date} location: ${item.location} picture: ${item.picture}`;
@@ -54,7 +54,6 @@ anime({
 anime({
   targets: "#subheading",
   backgroundColor: "#ffeeb6",
-
 
   delay: 2000,
 });
