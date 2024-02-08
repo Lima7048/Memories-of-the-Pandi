@@ -191,21 +191,41 @@ label {
   background-color: #ffeeb6;
   padding-top: 500px;
   margin-left: 30%;
-  height: 400px;
-  width: 800px;
+  height: 500px;
+  width: 700px;
   position: relative;
   margin-top: 10%;
   display: grid;
   grid-area: center;
-
   margin: auto;
-  width: 50%;
-  border: 3px solid green;
+  /* width: 50%; */
+  border: 2px solid green;
   padding: 10px;
+  /* white-space: nowrap; */
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-wrap: break-word;
 }
 
-#subheading {
-  background-color: #fcbb65;
-  border: 5px solid black;
-  padding: 15px;
+.story {
+  background-color: #f6d25d;
+  border-radius: 1rem;
+  margin: 1%;
+  padding: 2%;
+  width: 650px;
+  height: 50px;
+  /* white-space: nowrap; */
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-wrap: break-word;
+  display: inline-block;
 }
+.story * {
+  display: flex;
+  flex-direction: column;
+}
+
+/* @media (max-width: 768px) {
+  .story {
+  }
+} */
