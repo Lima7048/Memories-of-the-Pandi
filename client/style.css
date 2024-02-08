@@ -65,11 +65,13 @@ button {
   z-index: 1;
   font-family: "Single Day", cursive;
   font-weight: bold;
+  border-radius: 3px;
 }
 
 h1 {
   text-align: center;
   font-family: "Single Day", cursive;
+  font-size: 400px;
 }
 
 h3 {
@@ -229,3 +231,8 @@ label {
   .story {
   }
 } */
+
+#subheading {
+  padding: 10px;
+  border-radius: 3px;
+}
