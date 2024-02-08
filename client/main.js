@@ -24,7 +24,7 @@ form.addEventListener("submit", async (event) => {
 async function fetchMemoriesList() {
   const memoriesList = await fetch(`${baseURL}/memories`);
   let result = await memoriesList.json();
-  return result;
+  return result();
 }
 fetchMemoriesList();
 
@@ -33,7 +33,11 @@ async function displayMemories() {
   existingData.innerHTML = "";
   memories.forEach((item) => {
     let memoryContainer = document.createElement("div");
-    memoryContainer.innerHTML = `Username: ${item.username} message: ${item.message} date: ${item.date} location: ${item.location} picture: ${item.picture}`;
+    let picture = document.createElement("a");
+    memoryContainer.innerHTML = `Username: ${item.username} message: ${
+      item.message
+    } date: ${item.date} location: ${item.location} picture: ${(picture.href =
+      item.picture)}`;
     existingData.appendChild(memoryContainer);
   });
 }
