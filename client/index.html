@@ -6,13 +6,13 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Memories of the Pandi</title>
-  <script type="module" src="./node_modules/animejs/lib/anime.min.js" defer></script>
+  <script type="application/json" src="./node_modules/animejs/lib/anime.min.js" defer></script>
   <script type="module" src="main.js" defer></script>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <div class="nav">
+  <div class="nav" role="navigation" aria-label="Main Navigation">
     <ul>
       <il><a href="#">Home</a></il>
       <il><a href="#About">About</a></il>
@@ -23,7 +23,7 @@
 
   <body>
     <div class="top-container">
-      <img class="logo" src="./logo.png">
+      <img class="logo" src="./logo.png" alt="Memories of the Pandi Logo">
       <h1><strong>Memories of the Pandi</strong></h1>
     </div>
     <h3 id="subheading"> The world changed with the announcement of a Global Pandemic in March 2020. A historic moment
@@ -31,9 +31,9 @@
       Pandemic and subsequent lockdowns. What was it like? Feel free to share those interesting, hilarious anecdotes.
     </h3>
 
-    <div id="main-screen">
+    <div id="main-screen" role="main">
       <div class="first-pandi-image">
-        <img class="panid-img" src="pandi.png">
+        <img class="panid-img" src="pandi.png" alt="Pandi Image">
       </div>
 
 
@@ -52,7 +52,7 @@
           <label>
             Your Picture (optional)
             <input type="text" name="picture" placeholder="Link to your picture" /></label>
-          <button type="submit">Submit</button>
+          <button type="submit" aria-live="polite">Submit</button>
         </form>
       </div>
 
@@ -60,22 +60,22 @@
         <img class="panid-img" src="./pandi.png">
       </div>
     </div>
-    <div id="existingMemories">
+    <div id="existingMemories" role="region" aria-labelledby="existingMemories-heading">
       <h3>See what other people remember</h3>
     </div>
 
-    <a id="About">
+    <a id="About" role="article">
       <h2>The Pandi Project</h2>
       <h3> Pandi was created in 2024....</h3>
 
     </a>
-    <a id="Contact">
+    <a id="Contact" role="article">
       <h2>Something to tell the team?</h2>
       <h3> Email us at pandacares @ bamboo.com....</h3>
 
     </a>
   </body>
-  <div class="footer">
+  <div class="footer" role="contentinfo">
     <p>&copy;Intellectual Property of Kelly, Max, Abel & Salima ʕ·͡ᴥ·ʔ</p>
     <p><i>Memmories of the Pandi</i></p>
     </footer>

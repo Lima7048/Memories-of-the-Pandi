@@ -55,5 +55,5 @@ anime({
   targets: "#subheading",
   backgroundColor: "#ffeeb6",
 
-  delay: 2000,
+  delay: 5000,
 });
