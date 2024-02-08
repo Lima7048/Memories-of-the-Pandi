@@ -1,4 +1,5 @@
 const baseURL = import.meta.env.VITE_Server;
+import anime from "./node_modules/animejs/lib/anime.es";
 
 const form = document.getElementById("memoryLog");
 const existingData = document.getElementById("existingMemories");
@@ -33,6 +34,7 @@ async function displayMemories() {
   existingData.innerHTML = "";
   memories.forEach((item) => {
     let memoryContainer = document.createElement("div");
+    memoryContainer.classList.add("story");
     memoryContainer.innerHTML = `Username: ${item.username} message: ${item.message} date: ${item.date} location: ${item.location} picture: ${item.picture}`;
     existingData.appendChild(memoryContainer);
   });
