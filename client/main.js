@@ -53,7 +53,8 @@ anime({
 
 anime({
   targets: "#subheading",
-  backgroundColor: "#FFF",
-  borderRadius: ["0%", "20%"],
+  backgroundColor: "#ffeeb6",
+
+
   delay: 2000,
 });
